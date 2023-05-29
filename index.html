@@ -14,266 +14,325 @@
   <script src="some.js"></script>
 
 </head>
+
 <body class="body">
-  <div id="navbaar">
-    <div class="navbar">
-      <div class="topnav">
-        <a class="logo" href="#home">
-          L.
-          <div class="logo-box"></div>
-        </a>
+  
+  <!--NAVIGATION BAR-->
+  <header>
+    <div id="id-navbaar">
+      <div class="navbar">
+        <div class="topnav">
+          <a class="logo" href="#home">
+            L.
+            <div class="logo-box"></div>
+          </a>
+        </div>
+  
+        <ul class="navbar-links">
+          <li class="list"><a class="a" href="#home">Home</a></li>
+          <li class="list"><a class="a" href="#about">About</a></li>
+          <li class="list"><a class="a" href="#works">Works</a></li>
+          <li class="list"><a class="a" href="#contacts">Contacts</a></li>
+        </ul>
+        
+        <div class="toggle-btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
       </div>
-
-      <ul class="navbar-links">
+  
+      <div class="dropdown-menu">
         <li class="list"><a class="a" href="#home">Home</a></li>
-        <li class="list"><a class="a" href="#about">About</a></li>
-        <li class="list"><a class="a" href="#works">Works</a></li>
-        <li class="list"><a class="a" href="#contacts">Contacts</a></li>
-      </ul>
-      
-      <div class="toggle-btn">
-        <i class="fa-solid fa-bars"></i>
+          <li class="list"><a class="a" href="#about">About</a></li>
+          <li class="list"><a class="a" href="#works">Works</a></li>
+          <li class="list"><a class="a" href="#contacts">Contacts</a></li>
       </div>
     </div>
-
-    <div class="dropdown-menu">
-      <li class="list"><a class="a" href="#home">Home</a></li>
-        <li class="list"><a class="a" href="#about">About</a></li>
-        <li class="list"><a class="a" href="#works">Works</a></li>
-        <li class="list"><a class="a" href="#contacts">Contacts</a></li>
-    </div>
-  </div>
+  </header>
   
-  <script>
-    const toggleBtn = document.querySelector('.toggle-btn')
-    const toggleBtnIcon = document.querySelector('.toggle-btn i')
-    const dropDownMenu = document.querySelector('.dropdown-menu')
 
-    toggleBtn.onclick = function()
-    {
-      dropDownMenu.classList.toggle('open')
-      const isOpen = dropDownMenu.classList.contains('open')
-
-      toggleBtnIcon.classList = isOpen
-        ? 'fa-solid fa-xmark'
-        : 'fa-solid fa-bars'
-      
-    }
-  </script>
-  
-  <main>
+  <!--HOMEPAGE SECTION-->
+  <header>
     <section id="home">
-      <div class="wtf">
-        <div class="heey">
+      <div class="home-container">
+        <div class="h-card space1">
           <p class="hey">
             Hey, my name's
           </p>
         </div>
-        <div class="lline">
-          <div class="line1"></div>
+
+        <div class="h-card space2">
+          <h1 class="p-name">
+            Lindokuhle Dlamini.
+          </h1>
+        </div>
+
+        <div class="h-card space3">
+          <h2 class="student">
+            I do Coding and such.
+          </h2>
+        </div>
+
+        <div class="h-card space4">
+          <p class="p-note">
+            I'm currently a student at Wits, doing my third year in Digital Arts. At the moment my main focus is building on my coding skills and work my way up to become a software dev one day. 
+          </p>
         </div>
       </div>
-      
-      <h1 class="my-name">
-        Lindokuhle Dlamini.
-      </h1>
-
-      <h2 class="student">
-        I do Coding and such.
-      </h2>
-
-      <p class="currently">
-        I'm currently a student at Wits, doing my third year in Digital Arts. At the moment my main focus is building on my coding skills and work my way up to become a software dev one day. 
-      </p>
     </section>
-
-    <section id="about">
-      <div class="the-about"> <!--A div that contains everything under the About Section, boths words and picture-->
-        <div class="about-words"> <!--All the words-->
-          <div class="wtf-about"> <!--The About line-->
-            <div class="aabout"> <!--The word About Me part-->
-              <p class="about-title">
-                About Me.
-              </p>
-            </div>
-            <div class="about-line"> <!--The line next to About Me part-->
-              <div class="line2"></div>
-            </div>
-          </div>
-          
-          <div class="wtf-well"> <!--The words under About, their own section-->
-            <div class="well-line"> <!--The line before the words-->
-              <div class="line3"></div>
-            </div>
-            <div class="wwell"> <!--It's like wtf-well, a section housing the words below About-->
-              <p class="well"> <!--I created these classes to separate these words into paragraphs easily-->
-                Well, no much to say about me. Personally I think I'm an average guy. I'm new to coding, three months in I think. For now I have a decent understanding of two languages. That being HTML and CSS. They can be a pain but I learn fast for an average guy.
-              </p>
-              <br>
-              <p class="well">
-                I've also been working on creating mini websites just to practice those said skills. JavaScript is currently next in line and for now it seems pretty decent. I think.
-              </p>
-              <br>
-              <p class="well">
-                About my school life. Digital Arts. It's an awesome course and I've made it this far without any serious trouble. I'm doing three modules at the moment, Interactive Media, Writing and Interactivity, and Digital Arts Theory.
-              </p>
-            </div>
-          </div>
-    
-          
-        </div>
+  </header>
   
-        <div class="me-pic"> <!--The picture-->
-          <img src="lindo.jpg" class="chad-pic">
+
+  <!--MAIN SECTION-->
+  <main>
+
+    <!--ABOUT SECTION-->
+    <section id="about">
+
+      <!--ABOUT ME (Text) CONTAINER-->
+      <div class="about-container1">
+        <div class="block block1">
+          <h1 class="about-title">
+            About Me.
+          </h1>
+        </div>
+
+        <div class="block block2">
+          <div class="line2"></div>
         </div>
       </div>
-      
-      
+
+      <!--INFO about me and my photo-->
+      <div class="about-container2">
+        <div class="block block3">
+          <div class="line3"></div>
+        </div>
+
+        <div class="h-card block block4">
+          <p class="p-note well"> <!--I created these classes to separate these words into paragraphs easily-->
+            Well, no much to say about me. Personally I think I'm an average guy. I'm new to coding, three months in I think. For now I have a decent understanding of two languages. That being HTML and CSS. They can be a pain but I learn fast for an average guy.
+          </p>
+          
+          <p class="p-note well">
+            I've also been working on creating mini websites just to practice those said skills. JavaScript is currently next in line and for now it seems pretty decent. I think.
+          </p>
+          <p class="p-note well">
+            About my school life. Digital Arts. It's an awesome course and I've made it this far without any serious trouble. I'm doing three modules at the moment, Interactive Media, Writing and Interactivity, and Digital Arts Theory.
+          </p>
+        </div>
+
+        <div class="h-card block block5">
+          <img src="lindo.jpg" class="u-photo">
+        </div>
+      </div>
+
     </section>
 
+
+    <!--WORKS SECTION-->
     <section id="works">
-      <div class="wtf-works">
-        <div class="wworks">
+
+      <!--PORTFOLIO SECTION-->
+      <div class="myWorks-container">
+
+        <!--MY WORK (Text Intro)-->
+        <div class="box box-one">
           <p class="m-works">
             My Works.
           </p>
         </div>
 
-        <div class="work-line">
-          <div class="line4"></div>
+        <!--Intro (Text) to Work-->
+        <div class="box box-two">
+          <p class="below">
+            Below are some of the works I've done outside school. These include interests and hobbies that are sort of related to what I currently do in school:
+          </p>
         </div>
-      </div>
-
-      <p class="below">
-        Below are some of the works I've done outside school. These include interests and hobbies that are sort of related to what I currently do in school:
-      </p>
-
-      
-
-      <div class="all-arts">
-        <div class="art-div">
+        
+        <!--ART (Ekko) CONTAINER-->
+        <div class="box box-container1">
           <div class="ekko-div">
             <img src="ekko22.jpg" class="art-pic">
           </div>
-    
-          <div class="art-word">
+
+          <div class="words">
             <p class="art-title">
               EKKO
             </p>
+          </div>
+
+          <div class="words">
             <p class="art1-stuff">
               This here is a piece of fan-art I made in 2021. It's one of the few pieces of concept arts I've made in a while as I've been exploring that field more.
             </p>
           </div>
+    
         </div>
-  
-        <div class="art2-div">
+
+        <!--ART (Bloodbots) CONTAINER-->
+        <div class="box box-container2">
           <div class="enemy-div">
             <img src="enemy.jpg" class="art2-pic">
           </div>
     
-          <div class="art2-word">
+          <div class="words">
             <p class="art2-title">
              BLOOD-BOTS
             </p>
+          </div>
+
+          <div class="words">
             <p class="art2-stuff">
               This is a concept design for an enemy character I created for a platformer game I had worked on in 2022. Another field I'm currently advancing in, concept designs.
             </p>
           </div>
         </div>
-      </div>
 
-      
-
-      <div class="website-demo">
-        <div class="art3-div">
-          <div class="ekko-div">
+        <!--CODE (Places) CONTAINER-->
+        <div class="box box-four box-container3">
+          <div class="places-div">
             <img src="places1.jpg" class="places-pic">
           </div>
     
-          <div class="art-word">
+          <div class="placesTitle">
             <p class="art-title">
               PLACES
             </p>
+          </div>
+
+          <div class="placesDesc">
             <p class="art3-stuff">
               This is one of the few demo-websites I made this year. It mainly focused in bettering my understanding of html and css, so structuring and styling. It's not the best thing I've done so far but it's my first site ever (but it doesn't work, JavaScript not applied). My goal from here on out is to redo the entire site with the focus of improving my styling and UI design. I had no plan while building that site so it was just me practicing my knowledge with html and css.
             </p>
           </div>
         </div>
+  
       </div>
 
-      <div class="wt-works">
-        <div class="work-line">
+
+      <!--WEEKLY BLOG POSTS-->
+      <div class="main-container">
+        
+        <!--First Line-->
+        <div class="line-work1">
           <div class="line4"></div>
         </div>
         
+        <!--School Work Text-->
         <div class="wworks">
           <p class="my-works">
             School Works.
           </p>
         </div>
 
-        <div class="work-line">
+        <!--Second Line-->
+        <div class="line-work2">
           <div class="line4"></div>
         </div>
-      </div>
+        
 
-      <div class="school-div">
+        <!--Blog Posts Text-->
         <div class="my-web">
           <p class="my-website">
             Below is my track record over the weeks working on my website. (Dev Blogs):
           </p>
         </div>
-        
 
-        <div class="da-container">
-          <div class="grid-container">
-            <div class="grid-item">
-              <a class="week-title" href="weekOne.html">
-                WEEK ONE
+        <!--Weeks Container-->
+        <div class="weeks-container">
+          <div class="grid-item">
+            <a class="week-title" href="weekOne.html">
+              WEEK ONE
 
-                <p class="sum-week">First week was focused on Frame works and how structured the website will be.</p>
-              </a>
-            </div>
+              <p class="sum-week">First week was focused on Frame works and how structured the website will be.</p>
+            </a>
+          </div>
 
-            <div class="grid-item">
-              <a class="week-title" href="weekTwo.html">
-                WEEK TWO
+          <div class="grid-item">
+            <a class="week-title" href="weekTwo.html">
+              WEEK TWO
 
-                <p class="sum-week">Second week was was design week, testing what colors work for the website.</p>
-              </a>
-            </div>
+              <p class="sum-week">Second week was was design week, testing what colors work for the website.</p>
+            </a>
+          </div>
 
-            <div class="grid-item">
-              <a class="week-title" href="weekThree.html">
-                WEEK THREE
+          <div class="grid-item">
+            <a class="week-title" href="weekThree.html">
+              WEEK THREE
 
-                <p class="sum-week">Third week was when I started coding, layering the basic frame of the website.</p>
-              </a>
-            </div>
+              <p class="sum-week">Third week was when I started coding, layering the basic frame of the website.</p>
+            </a>
+          </div>
 
-            <div class="grid-item">
-              <a class="week-title" href="weekFour.html">
-                WEEK FOUR
+          <div class="grid-item">
+            <a class="week-title" href="weekFour.html">
+              WEEK FOUR
 
-                <p class="sum-week">Forth week was the focus of figuring out how to optimize my code.</p>
-              </a>
-            </div>
+              <p class="sum-week">Forth week was the focus of figuring out how to optimize my code.</p>
+            </a>
+          </div>
 
-            <div class="grid-item">
-              <a class="week-title" href="weekFive.html">
-                WEEK FIVE
+          <div class="grid-item">
+            <a class="week-title" href="weekFive.html">
+              WEEK FIVE
 
-                <p class="sum-week">Fifth week was where I ran into a couple of design and code issues</p>
-              </a>
-            </div>
+              <p class="sum-week">Fifth week was where I ran into a couple of design and code issues</p>
+            </a>
+          </div>
 
-            <div class="grid-item">
-              <a class="week-title" href="weekSix.html">
-                WEEK SEVEN
+          <div class="grid-item">
+            <a class="week-title" href="weekSix.html">
+              WEEK SEVEN
 
-                <p class="sum-week">Sixth week is how I managed to find new ways to tackle most of the issues.</p>
-              </a>
-            </div>
+              <p class="sum-week">Sixth week is how I managed to find new ways to tackle most of the issues.</p>
+            </a>
+          </div>
+
+          <div class="grid-item">
+            <a class="week-title" href="weekSix.html">
+              WEEK EIGHT
+
+              <p class="sum-week">Sixth week is how I managed to find new ways to tackle most of the issues.</p>
+            </a>
+          </div>
+
+          <div class="grid-item">
+            <a class="week-title" href="weekSix.html">
+              WEEK NINE
+
+              <p class="sum-week">Sixth week is how I managed to find new ways to tackle most of the issues.</p>
+            </a>
+          </div>
+
+          <div class="grid-item">
+            <a class="week-title" href="weekSix.html">
+              WEEK TEN
+
+              <p class="sum-week">Sixth week is how I managed to find new ways to tackle most of the issues.</p>
+            </a>
+          </div>
+
+          <div class="grid-item">
+            <a class="week-title" href="weekSix.html">
+              WEEK ELEVEN
+
+              <p class="sum-week">Sixth week is how I managed to find new ways to tackle most of the issues.</p>
+            </a>
+          </div>
+
+          <div class="grid-item">
+            <a class="week-title" href="weekSix.html">
+              WEEK TWELVE
+
+              <p class="sum-week">Sixth week is how I managed to find new ways to tackle most of the issues.</p>
+            </a>
+          </div>
+
+          <div class="grid-item">
+            <a class="week-title" href="weekSix.html">
+              WEEK THIRTEEN
+
+              <p class="sum-week">Sixth week is how I managed to find new ways to tackle most of the issues.</p>
+            </a>
           </div>
 
           <div class="essay-item">
@@ -291,16 +350,23 @@
               <p class="essay-text">Here you'll find the Design Section on a separate page.</p>
             </a>
           </div>
-        </div>
-      </div>
-    </section>
 
+        </div>
+
+      </div>
+      
+    </section>
+  </main>
+
+
+  <!--CONTACTS SECTION-->
+  <footer>
     <section id="contacts">
       <div>
         <div class="my-web">
           <div class="wt-works">
             <div class="work-line">
-              <div class="line5"></div>
+              <div class="line4"></div>
             </div>
             
             <div class="wworks">
@@ -308,27 +374,41 @@
                 My Contacts.
               </p>
             </div>
-    
-            <div class="work-line">
-              <div class="line5"></div>
-            </div>
           </div>
 
           <p class="my-website">
             I don't have much of a Social Media presence but if you wish to contact me, here are my details below (emails):
           </p>
           <br>
-          <p class="my-website2">
+          <p class="p-email">
             Personal: <strong>lindodlamini315@gmail.com</strong>
           </p>
-          <p class="my-website2">
+          <p class="p-email">
             School: <strong>2500080@students.wits.ac.za</strong>
           </p>
         </div>
       </div>
     </section>
-    
-  </main>
+  </footer>
+
+
+  <!--JS SCRIPT-->
+  <script>
+    const toggleBtn = document.querySelector('.toggle-btn')
+    const toggleBtnIcon = document.querySelector('.toggle-btn i')
+    const dropDownMenu = document.querySelector('.dropdown-menu')
+
+    toggleBtn.onclick = function()
+    {
+      dropDownMenu.classList.toggle('open')
+      const isOpen = dropDownMenu.classList.contains('open')
+
+      toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+      
+    }
+  </script>
   
 </body>
 </html>

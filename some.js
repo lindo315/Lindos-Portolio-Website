@@ -4,12 +4,11 @@ window.onscroll = function()
   var currentScroll = window.pageYOffset;
   if(prevScroll > currentScroll)
   {
-    document.getElementById("navbaar").style.top = "0";
+    document.getElementById("id-navbaar").style.top = "0";
   }
   else
   {
-    document.getElementById("navbaar").style.top = "-100px";
+    document.getElementById("id-navbaar").style.top = "-100px";
   }
   prevScroll = currentScroll;
 }
-
