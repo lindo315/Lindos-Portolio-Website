@@ -541,7 +541,13 @@ section#works
 }
 
 
-
+@media(max-width: 768px)
+{
+  .design-body
+  {
+    width: 100vw;
+  }
+}
 
 
 
@@ -774,7 +780,7 @@ section#works
 
   .p-note
   {
-    font-size: 17px;
+    font-size: 19px;
   }
 }
 
