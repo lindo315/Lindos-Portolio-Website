@@ -545,7 +545,7 @@ section#works
 /*DESIGN SECTION*/
 .design-body
 {
-  height: calc(1400vh - 1300px);
+  height: calc(1550vh - 1400px);
   display: flex;
   flex-direction: column;
   align-items: center;
