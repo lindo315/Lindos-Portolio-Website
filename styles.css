@@ -9,7 +9,7 @@
 
 /*WEBSITE BACKGROUND*/
 .body,
-.week-body,
+.essay-body,
 .design-body
 {
   background-image: linear-gradient(white, #d1d7db);
@@ -528,6 +528,19 @@ section#works
 
 
 
+.essay-body
+{
+  height: 450vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 0px;
+  padding-top: 100px;
+}
+
+
+
+
 
 /*DESIGN SECTION*/
 .design-body
@@ -567,7 +580,7 @@ section#works
 .line4
 {
   border-bottom: 3px solid #2C5364;
-  width: 700px;
+  width: 600px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -978,7 +991,6 @@ section#works
   font-size: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
-  text-align: center;
   width: 600px;
 }
 
@@ -1005,6 +1017,7 @@ section#works
 {
   position: absolute;
   top: 50px;
+  margin-left: 20px;
 }
 
 .grid-item
@@ -1028,6 +1041,7 @@ section#works
 .week-heading
 {
   font-size: 60px;
+  width: 600px;
   margin-bottom: 20px;
   color: #0F2027;
   font-weight: bold;
@@ -1047,10 +1061,9 @@ section#works
   -webkit-text-fill-color: transparent;
 }
 
-
 .div-dev
 {
-  width: 70%;
+  width: 80vw;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -1081,6 +1094,8 @@ section#works
 .blog-text
 {
   font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   color: #0f2027;
   font-weight: 500;
 }
@@ -1143,6 +1158,14 @@ section#works
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+
+/*Design Section GoBack Link*/
+a
+{
+  text-decoration: none;
+}
+
 
 .wireframe-below
 {
