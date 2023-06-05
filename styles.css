@@ -1499,4 +1499,16 @@ a
     width: 700px;
     margin-top: 0;
   }
+
+  .week-heading
+  {
+    font-size: 40px;
+    width: 300px;
+    margin-bottom: 0;
+  }
+
+  .essay-body
+  {
+    background: none;
+  }
 }
