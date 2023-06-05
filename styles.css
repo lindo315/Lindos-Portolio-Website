@@ -1333,8 +1333,7 @@ a
 
   section#home
   {
-    height: 70vh;
-    padding-top: 200px;
+    height: 100vh;
   }
 
   .myWorks-container
@@ -1360,17 +1359,36 @@ a
   section#home
   {
     height: 80vh;
-    padding-top: 300px;
+    padding-top: 100px;
   }
 
   section#works
   {
     margin-bottom: 0px;
+    margin-top: 400px;
+  }
+
+  .main-container
+  {
+    margin-top: 600px;
+  }
+
+  .body
+  {
+    height: 100%;
+  }
+
+
+
+  .my-web
+  {
+    margin-top: 0px;
   }
 
   section#contacts
   {
-    margin-top: 10vh;
+    margin-top: 230vh;
+    height: 130vh;
   }
 
   .about-container2
@@ -1381,6 +1399,11 @@ a
   .myWorks-container
   {
     height: 160vh;
+  }
+
+  .design-body
+  {
+    height: 1550vh;
   }
 }
 
@@ -1404,6 +1427,11 @@ a
     grid-template-rows: repeat(7, 250px);
     column-gap: 10px;
     row-gap: 10px;
+  }
+
+  .design-body
+  {
+    height: 1600vh;
   }
 }
 
@@ -1442,11 +1470,30 @@ a
 
 }
 
-@media(max-width: 480px) and (min-width: 300px)
+@media(max-width: 480px)
 {
-  section#about
+
+  section#home
   {
     height: 100vh;
+    margin-top: 250px;
+  }
+
+  .my-website
+  {
+    margin-left: 50px;
+  }
+
+  section#about
+  {
+    height: 150vh;
+    margin-top: 0;
+  }
+
+  section#contacts
+  {
+    
+    height: 200vh;
   }
 
   .about-container1
@@ -1491,7 +1538,8 @@ a
 
   section#works
   {
-    height: 600vh;
+    height: 800vh;
+    margin-top: 0;
   }
 
   section#contacts
@@ -1510,6 +1558,11 @@ a
   .essay-body
   {
     background: none;
+  }
+
+  .design-body
+  {
+    height: 1750vh;
   }
 }
 
