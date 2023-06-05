@@ -1,4 +1,6 @@
 var prevScroll = window.pageYOffset;
+
+
 window.onscroll = function()
 {
   var currentScroll = window.pageYOffset;
@@ -12,3 +14,4 @@ window.onscroll = function()
   }
   prevScroll = currentScroll;
 }
+
